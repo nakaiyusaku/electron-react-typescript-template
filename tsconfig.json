@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // Electron アプリでは Chromium ランタイムのみを考慮すれば足りるため target には es2015 以降を指定できる。
+    "module": "ES2015", // Webpack の Tree Shaking を有効にするため module には es2015 を設定。
+    "moduleResolution": "node",
+    "lib": ["DOM", "ES2015"],
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".", // 独自作成の型定義ファイルの配置場所をコンパイラに教えるため、 basUrl と paths を設定。
+    "paths": {
+      "*": ["@types/*"]
+    },
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
