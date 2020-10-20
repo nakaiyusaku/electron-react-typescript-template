@@ -1,6 +1,7 @@
 import { BrowserWindow, app, ipcMain, dialog } from 'electron';
 import fs from 'fs';
 import path from 'path';
+import * as isDev from 'electron-is-dev';
 
 /**
  * Preload スクリプトの所在するディレクトリを取得
@@ -20,8 +21,8 @@ const getResourceDirectory = () => {
  */
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 800,
     webPreferences: {
       /**
        * BrowserWindowインスタンス（レンダラープロセス）では

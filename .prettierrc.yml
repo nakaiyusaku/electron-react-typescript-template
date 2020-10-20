@@ -8,4 +8,4 @@ trailingComma: all # オブジェクトリテラルなどの最後のカンマ�
 bracketSpacing: true # {}のカッコに隣接するスペースをいれる
 jsxBracketSameLine: true # JSXの後ろの'>'を同じ行にする
 arrowParens: avoid # Arrow関数の引数のカッコは必要な場合のみつける
-endOfLine: crlf # 改行コードを "crlf" にする
+endOfLine: auto # 改行コードを "crlf" にする
